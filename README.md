@@ -8,6 +8,12 @@ Example:
 
 ```bash
 playbook-linter --playbook=./test/playbook.yml --source_dir=./test
+
+
+# Output:
+# =================================== Report ===================================
+# Unused variables: {'ansible_python_intepreter'}
+# Missing variables: {'field2', 'field1'}
 ```
 
 Help:
