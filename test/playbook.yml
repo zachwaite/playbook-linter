@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/ansible-community/schemas/main/f/ansible.json
+---
+- name: Some play
+  hosts: localhost
+  connection: local
+  tags:
+    - dev
+    - local
+  vars:
+    ansible_python_intepreter: /usr/bin/python3
+  tasks:
+    - name: Echo
+      debug:
+        msg: "Hello World"
